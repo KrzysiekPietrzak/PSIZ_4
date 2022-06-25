@@ -111,7 +111,7 @@ berResults calculateBer(std::string fpath1, std::string fpath2)
     return results; //return structure with all results
 }
 
-/*void printResult(berResults results)
+void printResult(berResults results)
 {
     std::stringstream message;
     message << "Results are: " << std::endl;
@@ -120,4 +120,3 @@ berResults calculateBer(std::string fpath1, std::string fpath2)
     message << "Err: " << results.err << std::endl;
     message << "Calc time: " << ((float)results.t2 - results.t1) / CLOCKS_PER_SEC << " sec " << std::endl;
     saveLog(message.str());
-}*
